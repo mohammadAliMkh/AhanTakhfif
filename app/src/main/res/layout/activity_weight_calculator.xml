@@ -11,6 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark"
         android:id="@+id/id_action_bar_fans_weight">
 
         <TextView
@@ -18,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="صفحه محاسبه وزن فَنس"
             android:textSize="16sp"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:layout_centerInParent="true"
             android:fontFamily="@font/iranian_sans"/>
@@ -29,14 +30,14 @@
             android:src="@drawable/back_icon"
             android:layout_centerVertical="true"
             android:layout_marginLeft="8dp"
+            app:tint="@color/colorPrimary"
             android:id="@+id/back_icon_fans_weight"/>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/colorPrimaryDark"
-            android:layout_alignParentBottom="true"/>
-
+            android:layout_marginTop="4dp"
+            android:background="@color/colorPrimary" />
 
     </RelativeLayout>
 
@@ -58,11 +59,13 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="235dp"
+        android:gravity="center"
         android:background="@drawable/bg_edit_text"
         android:fontFamily="@font/iranian_sans"
-        android:hint="سایز چشمه (میلی متر)"
+        android:hint="سایز چشمه (سانتی متر)"
         android:inputType="numberDecimal"
         android:padding="8dp"
+        android:textStyle="bold"
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
         android:textSize="14sp" />
@@ -75,8 +78,10 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="104dp"
+        android:textStyle="bold"
         android:background="@drawable/bg_edit_text"
         android:fontFamily="@font/iranian_sans"
+        android:gravity="center"
         android:hint="سایز مفتول (میلی متر)"
         android:inputType="numberDecimal"
         android:padding="8dp"

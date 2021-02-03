@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
         android:fontFamily="@font/iranian_sans"
-        android:text="گروه مهندسی آهن سازان آرکا(آهن تخفیف)"
+        android:text="گروه صنعتی آهن سازان آرکا (آهن تخفیف)"
         android:textSize="14sp"
         android:textColor="@color/colorPrimary"
         android:layout_alignParentBottom="true"

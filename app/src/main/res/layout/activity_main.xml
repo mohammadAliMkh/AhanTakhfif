@@ -11,6 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark"
         android:id="@+id/id_action_bar_main">
 
         <TextView
@@ -18,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="صفحه اصلی"
             android:textSize="16sp"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:layout_centerInParent="true"
             android:fontFamily="@font/iranian_sans"/>
@@ -26,29 +27,30 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/colorPrimaryDark"
-            android:layout_alignParentBottom="true"/>
+            android:layout_marginTop="4dp"
+            android:background="@color/colorPrimary" />
 
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@+id/id_action_bar_main"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp">
+
+
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
+            android:layout_width="256dp"
             android:layout_height="wrap_content"
             android:text="محسابه وزن فنس"
+            android:layout_centerHorizontal="true"
             android:fontFamily="@font/iranian_sans"
             android:textStyle="bold"
+            android:paddingRight="8dp"
+            android:layout_below="@id/id_action_bar_main"
+            android:layout_marginTop="32dp"
+            android:paddingLeft="8dp"
             android:id="@+id/btn_fans_weight_calculator"
             android:background="@drawable/bg_button_fans_calculor"
             android:textColor="@color/colorAccent"/>
-    </LinearLayout>
+
+
 
 
 
