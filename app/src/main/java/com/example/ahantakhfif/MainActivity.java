@@ -11,7 +11,6 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     Button fansWeightBtn;
-    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

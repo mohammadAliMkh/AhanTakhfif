@@ -1,9 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
     android:layout_height="match_parent"
     tools:context=".WeightCalculatorActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/id_action_bar_fans_weight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="صفحه محاسبه وزن فَنس"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/iranian_sans"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/back_icon_fans_weight"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/fans_image"
+        android:layout_below="@id/id_action_bar_fans_weight"
+        android:src="@drawable/good1"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mesh_size_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="235dp"
+        android:background="@drawable/bg_edit_text"
+        android:fontFamily="@font/iranian_sans"
+        android:hint="سایز چشمه (میلی متر)"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/wire_size_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/bg_edit_text"
+        android:fontFamily="@font/iranian_sans"
+        android:hint="سایز مفتول (میلی متر)"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:text="محاسبه وزن فَنس"
+        android:fontFamily="@font/iranian_sans"
+        android:background="@drawable/bg_button_fans_calculor"
+        android:textColor="@color/colorAccent"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_below="@id/fans_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btn_fans_weight_calculate"/>
+
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_fans_weight_calculate"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="وزن یک متر مربع:"
+        android:id="@+id/weight_tv"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/iranian_sans"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:layout_below="@id/weight_tv"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/weight_fans_tv"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/bg_edit_text"
+        android:layout_alignLeft="@id/weight_tv"
+        android:layout_marginTop="4dp"
+        android:layout_alignRight="@id/weight_tv"/>
+
+</RelativeLayout>
